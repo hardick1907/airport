@@ -738,18 +738,24 @@
 			const staticImage = document.getElementById('static-image');
 			const videoContainer = document.getElementById('video-container');
 			const video = videoContainer.querySelector('video');
-
+	
 			// Wait for the image animation to complete (5 seconds)
 			setTimeout(() => {
 				// Hide the static image
 				staticImage.style.display = 'none';
-
-				// Show the video and fade it in
+	
+				// Show the video container
 				videoContainer.style.display = 'flex';
+	
+				// Ensure the video fades in
 				video.style.opacity = '1';
+	
+				// Start the video playback
+				video.play();
 			}, 5000); // 5000ms = 5 seconds
 		});
 	</script>
+	
 </body>
 
 
